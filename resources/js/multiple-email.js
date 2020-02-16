@@ -46,5 +46,6 @@ function validateEmail(email) {
   };
   $('#cancel').click(function () {
     $list.empty();
+    $('#email_search').val('');
   });
 })( jQuery );
