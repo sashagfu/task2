@@ -1,1 +1,114 @@
-//
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/css/all';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// MDBootstrap
+@import '~mdbootstrap/css/mdb.min.css';
+@import '~mdbootstrap/css/style.css';
+
+$dark: #1c2331;
+$blue: #4285f4;
+$light: #f8f9fa;
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: $dark !important;
+  color: $light;
+}
+main {
+  border: 2px solid $blue !important;
+  height: 100%;
+  padding: 7rem 0;
+}
+h1 {
+  text-transform: uppercase;
+}
+#emails {
+  background-color: $dark;
+}
+.multipleInput-container {
+  border-bottom: 1px #ccc solid;
+  padding: 1px;
+  padding-bottom: 0;
+  margin-left: 36px;
+  cursor: text;
+  font-size: 13px;
+  width: calc(100% - 36px);
+  overflow: auto;
+  background-color: $dark;
+  input {
+    width: 150px;
+    height: 24px;
+    border: 0;
+    margin-bottom: 1px;
+    outline: none;
+    background-color: $dark;
+    color: $light;
+  }
+  ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0px !important;
+  }
+}
+li.multipleInput-email {
+  float: left;
+  margin-right: 2px;
+  margin-bottom: 1px;
+  border: 1px solid $light;
+  padding: 6px 4px;
+  height: 41px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.multipleInput-close {
+  width: 16px;
+  height: 16px;
+  display: block;
+  float: right;
+  margin: 0 3px;
+  color: $light;
+}
+#email_search {
+  display: inline;
+  float: left;
+  height: 36px;
+  font-size: 18px;
+  width: 215px;
+  border-bottom: unset;
+}
+.btn-outline-primary {
+  color: $light !important;
+}
+.form-title {
+  margin-left: 36px;
+  margin-bottom: -24px;
+  width: calc(100% - 36px);
+  color: $blue;
+  text-transform: uppercase;
+  .error-msg {
+    text-transform: none;
+    color: red;
+    display: none;
+  }
+}
+.form-element {
+  position: relative;
+}
+.form-element .pre {
+  position: absolute;
+  top: .25rem;
+  font-size: 1.75rem;
+  color: $blue;
+}
+.text-help {
+  padding-top: .6rem;
+}
+.alert {
+  position: fixed;
+  top: 1rem;
+}
