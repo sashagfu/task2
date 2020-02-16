@@ -14,13 +14,13 @@ $light: #f8f9fa;
 
 html, body {
   height: 100%;
+  border: 1px solid $blue !important;
 }
 body {
   background-color: $dark !important;
   color: $light;
 }
 main {
-  border: 2px solid $blue !important;
   height: 100%;
   padding: 7rem 0;
 }
