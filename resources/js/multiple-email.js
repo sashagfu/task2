@@ -49,4 +49,10 @@ function validateEmail(email) {
     $list.empty();
     $('#email_search').val('');
   });
+  // click outside the element
+  $(document).on('click', function (e) {
+    let el = '.multipleInput-container';
+    if ($(e.target).closest(el).length) return;
+    $('.multipleInput-container').css('border-bottom', '1px #ccc solid');
+  });
 })( jQuery );
