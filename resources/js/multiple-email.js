@@ -38,6 +38,7 @@ function validateEmail(email) {
       // container div
       const $container = $('<div class="multipleInput-container" />').click(function() {
         $input.focus();
+        $('.multipleInput-container').css('border-bottom', '2px #4285f4 solid');
       });
       // insert elements into DOM
       $container.append($list).append($input).insertAfter($(this));

@@ -22,7 +22,7 @@ $('#send').click(function () {
       url: 'api/invites',
       data: formData,
     }).then(function (response) {
-      $('.container').append('<div class="alert alert-success animated fadeIn" role="alert">The invites was sent successfully!</div>')
+      $('.container').append('<div class="alert alert-success animated fadeIn" role="alert">The invites are successfully sent!</div>')
       $('.multipleInput-container ul').empty();
       setTimeout(function() {
         $('.alert').remove();

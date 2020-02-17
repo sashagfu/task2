@@ -36,6 +36,7 @@ h1 {
 }
 #emails {
   background-color: $dark;
+  border: none;
 }
 .multipleInput-container {
   border-bottom: 1px #ccc solid;
@@ -115,6 +116,54 @@ li.multipleInput-email {
 .text-help {
   padding-top: .6rem;
 }
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(10);
+  }
+}
+.btn-waves {
+  display: inline-block;
+  background-color: lightblue;
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  min-width: 10vw;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    top: 50%;
+    left: 50%;
+    animation: ripple 1s;
+    opacity: 0;
+  }
+  &:focus {
+    &:not(:active) {
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
+
 .alert {
   position: fixed;
   top: 1rem;

@@ -24,8 +24,8 @@
                 </div>
                 <div class="text-help">Send multiple invites by entering email address.</div>
                 <div class="mt-4 text-right">
-                    <button type="button" id="cancel" class="btn btn-outline-primary waves-effect">Cancel</button>
-                    <button type="button" id="send" class="btn btn-outline-primary waves-effect">Send</button>
+                    <button type="button" id="cancel" class="btn btn-outline-primary btn-waves">Cancel</button>
+                    <button type="button" id="send" class="btn btn-outline-primary btn-waves">Send</button>
                 </div>
             </div>
         </div>
